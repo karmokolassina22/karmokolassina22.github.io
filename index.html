@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ladji KARAMOKO DevOps </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="particles"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#accueil" class="logo">LK<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-nav">Me contacter</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="accueil">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Disponible - Alternance maintenant / Sept. 2026
+      </div>
+      <p class="hero-greeting">Bonjour, je suis</p>
+      <h1 class="hero-name">Ladji<br /><span>KARAMOKO</span></h1>
+      <div class="hero-typed">
+        <span class="typed-arrow">&rsaquo;</span>
+        <span id="typed-text"></span>
+        <span class="cursor"></span>
+      </div>
+      <p class="hero-desc">
+        Étudiant en <strong>MSc à Epitech Paris</strong>, je recherche une alternance de 24 mois pour
+        septembre 2026 en Contrat d’apprentissage — Rythme : 4 jours
+        entreprise / 1 jour école. Passionné par le <strong>développement web full-stack &amp; DevOps</strong>, je crée des solutions
+        solides avec Java, Python, JavaScript, Docker et Jenkins.
+      </p>
+      <div class="hero-cta">
+        <a href="#projets" class="btn-primary">Voir mes projets →</a>
+        <a href="#" class="btn-ghost">⬇ Télécharger CV</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="orbit-wrap">
+        <div class="ring ring-1"><div class="dot"></div></div>
+        <div class="ring ring-2"><div class="dot"></div></div>
+        <div class="ring ring-3"><div class="dot"></div></div>
+        <div class="avatar">LK</div>
+        <div class="orbit-tag tag-top">⚙️ DevOps</div>
+        <div class="orbit-tag tag-left">🐳 Docker</div>
+        <div class="orbit-tag tag-bottom">&lt;/&gt; Dev Web</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="about">
+    <div class="section-header">
+      <span class="badge">À propos</span>
+      <h2 class="section-title">Qui suis-je ?</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Étudiant en <strong>MSc Informatique à Epitech Paris</strong>, je transforme ma passion du développement en compétences concrètes : web, backend et DevOps.</p>
+        <p>Originaire d'<strong>Abidjan, Côte d'Ivoire</strong>, je suis basé dans le <strong> 93300 Aubervilliers en Île-de-France</strong>, mobile et disponible pour une alternance en septembre 2026 au rythme de <strong>Rythme : 4 jours entreprise / 1 jour école.</strong>.</p>
+        <p>Mes projets Epitech couvrent des apps <strong>backend temps réel</strong>, des <strong>jeux 3D Java</strong> et des <strong>sites full-stack</strong> avec bases de données.</p>
+        <div class="info-grid">
+          <div class="info-card"><span class="info-icon">📍</span><div><div class="info-label">Localisation</div><div class="info-val">24 Rue Pasteur, 94270 le Kremlin-Bicêtre</div></div></div>
+          <div class="info-card"><span class="info-icon">🎓</span><div><div class="info-label">École</div><div class="info-val">Epitech Paris</div></div></div>
+          <div class="info-card"><span class="info-icon">🔍</span><div><div class="info-label">Recherche</div><div class="info-val">Alternance DevOps / Dev</div></div></div>
+          <div class="info-card"><span class="info-icon">🌍</span><div><div class="info-label">Langues</div><div class="info-val">Français C1 · Anglais A2</div></div></div>
+        </div>
+      </div>
+      <div class="about-cards">
+        <div class="acard"><div class="acard-icon">☕</div><h4>Java &amp; 3D</h4><p>Jeux 3D en Java : modélisation, logique, assets et gameplay.</p></div>
+        <div class="acard"><div class="acard-icon">🔌</div><h4>Backend Temps Réel</h4><p>Chat WebSocket avec MongoDB, PostgreSQL, statut online/offline.</p></div>
+        <div class="acard"><div class="acard-icon">🌐</div><h4>Dev Web Full-Stack</h4><p>Sites HTML/CSS/JS, SQLite3, phpMyAdmin, gestion utilisateurs.</p></div>
+        <div class="acard"><div class="acard-icon">🐳</div><h4>DevOps</h4><p>Docker, Jenkins, Git/GitHub pour CI/CD et déploiement continu.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <div class="section-header">
+      <span class="badge">Compétences</span>
+      <h2 class="section-title">Expertise Technique</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-title">💻 Langages</div>
+        <div class="skill-item"><div class="skill-row"><span>Java</span><span class="pct">20%</span></div><div class="bar"><div class="bar-fill" data-w="70"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>JavaScript</span><span class="pct">40%</span></div><div class="bar"><div class="bar-fill" data-w="75"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>Python</span><span class="pct">60%</span></div><div class="bar"><div class="bar-fill" data-w="60"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>Rust</span><span class="pct">15%</span></div><div class="bar"><div class="bar-fill" data-w="40"></div></div></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">🌐 Technologies Web</div>
+        <div class="skill-item"><div class="skill-row"><span>HTML / CSS</span><span class="pct">80%</span></div><div class="bar"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>WordPress</span><span class="pct">70%</span></div><div class="bar"><div class="bar-fill" data-w="70"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>WebSocket</span><span class="pct">30%</span></div><div class="bar"><div class="bar-fill" data-w="65"></div></div></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">🗄️ Bases de données</div>
+        <div class="skill-item"><div class="skill-row"><span>PostgreSQL</span><span class="pct">25%</span></div><div class="bar"><div class="bar-fill" data-w="65"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>MongoDB</span><span class="pct">25%</span></div><div class="bar"><div class="bar-fill" data-w="60"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>SQLite3</span><span class="pct">65%</span></div><div class="bar"><div class="bar-fill" data-w="65"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>PhpMyAdmin</span><span class="pct">40%</span></div><div class="bar"><div class="bar-fill" data-w="60"></div></div></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">⚙️ DevOps &amp; Outils</div>
+        <div class="skill-item"><div class="skill-row"><span>Git / GitHub</span><span class="pct">45%</span></div><div class="bar"><div class="bar-fill" data-w="75"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>Docker</span><span class="pct">35%</span></div><div class="bar"><div class="bar-fill" data-w="65"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>Jenkins</span><span class="pct">20%</span></div><div class="bar"><div class="bar-fill" data-w="55"></div></div></div>
+        <div class="skill-item"><div class="skill-row"><span>Ubuntu (WSL)</span><span class="pct">70%</span></div><div class="bar"><div class="bar-fill" data-w="70"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCE -->
+  <section id="experience">
+    <div class="section-header">
+      <span class="badge">Expérience</span>
+      <h2 class="section-title">Parcours Professionnel</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-icon">🔌</div>
+        <div class="tl-body">
+          <div class="tl-head"><div class="tl-title">Développeur Backend - App Chat Temps Réel</div><span class="tl-date">2025 – 2026</span></div>
+          <div class="tl-company">Epitech · Le Kremlin-Bicêtre</div>
+          <ul class="tl-list">
+            <li>Implémentation des communications temps réel via WebSocket</li>
+            <li>Gestion des messages instantanés</li>
+            <li>Fonctionnalités : user typing, statut online/offline</li>
+            <li>Intégration MongoDB et PostgreSQL</li>
+            <li>Conception et structuration de l'architecture backend</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-icon">☕</div>
+        <div class="tl-body">
+          <div class="tl-head"><div class="tl-title">Développeur Java - Jeu 3D</div><span class="tl-date">2025 - 2026</span></div>
+          <div class="tl-company">Epitech · Le Kremlin-Bicêtre</div>
+          <ul class="tl-list">
+            <li>Modélisation 3D des objets et environnements</li>
+            <li>Implémentation de la logique de jeu</li>
+            <li>Intégration des assets : images, sons, animations</li>
+            <li>Gestion des interactions et mécaniques de gameplay</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-icon">💼</div>
+        <div class="tl-body">
+          <div class="tl-head"><div class="tl-title">Développeur Web - Site d'Offres d'Emploi</div><span class="tl-date">2025 - 2026</span></div>
+          <div class="tl-company">Epitech · Le Kremlin-Bicêtre</div>
+          <ul class="tl-list">
+            <li>Développement : offres, comptes utilisateurs/admin, tableau de bord</li>
+            <li>Implémentation UI, formulaires, interactions back-end &amp; front-end</li>
+            <li>Base de données en SQLite3 et phpMyAdmin</li>
+            <li>Codage HTML, CSS et JavaScript</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-icon">🖥️</div>
+        <div class="tl-body">
+          <div class="tl-head"><div class="tl-title">Développeur WordPress</div><span class="tl-date">Oct. 2021 - Jan. 2022</span></div>
+          <div class="tl-company">Coursier Médical · Abidjan, Côte d'Ivoire</div>
+          <ul class="tl-list">
+            <li>Analyse des besoins clients pour livraisons médicales</li>
+            <li>Optimisation du temps de chargement de 30% (compression &amp; cache)</li>
+            <li>Développement et maintenance WordPress : interface coursiers &amp; facturation</li>
+            <li>Gestion de contenu : textes, images, mises à jour</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section id="formation">
+    <div class="section-header">
+      <span class="badge">Formation</span>
+      <h2 class="section-title">Parcours Académique</h2>
+    </div>
+    <div class="formation-grid">
+      <div class="fcard active-fcard">
+        <div class="fcard-badge current">MSc</div>
+        <span class="current-tag">● En cours</span>
+        <h4>MSc - Informatique &amp; Développement Web</h4>
+        <div class="fcard-school">Epitech · Paris, France</div>
+        <div class="fcard-dates">Depuis 2025</div>
+        <ul class="fcard-list">
+          <li>Développement web &amp; backend avancé</li>
+          <li>Projets Java, Python, JavaScript</li>
+          <li>Docker, Jenkins, Git / GitHub</li>
+          <li>Architecture logicielle &amp; bases de données</li>
+        </ul>
+      </div>
+      <div class="fcard">
+        <div class="fcard-badge">B1/2</div>
+        <h4>Bachelor 1 &amp; 2</h4>
+        <div class="fcard-school">EDC Paris Business School · Paris, France</div>
+        <div class="fcard-dates">2024 - 2025</div>
+        <ul class="fcard-list">
+          <li>Gestion de projet &amp; management</li>
+          <li>Entrepreneuriat &amp; innovation</li>
+          <li>Communication professionnelle</li>
+        </ul>
+      </div>
+      <div class="fcard">
+        <div class="fcard-badge alt">BTS</div>
+        <h4>BTS Informatique</h4>
+        <div class="fcard-school">École Spécialité MultiMédia · Abidjan, Côte d'Ivoire</div>
+        <div class="fcard-dates">2019 - 2021</div>
+        <ul class="fcard-list">
+          <li>Développement logiciel &amp; web</li>
+          <li>Réseaux et systèmes informatiques</li>
+          <li>Multimédia &amp; design</li>
+        </ul>
+      </div>
+      <div class="fcard">
+        <div class="fcard-badge dark">BAC</div>
+        <h4>Baccalauréat Général</h4>
+        <div class="fcard-school">Collège Sainte Foi · Abidjan, Côte d'Ivoire</div>
+        <div class="fcard-dates">2018 - 2019</div>
+        <ul class="fcard-list">
+          <li>Formation générale scientifique</li>
+          <li>Bases en mathématiques et sciences</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <div class="section-header">
+      <span class="badge">Projets Scolaires</span>
+      <h2 class="section-title">Réalisations Techniques</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="pcard">
+        <div class="pcard-num">01</div>
+        <div class="pcard-icon">🔌</div>
+        <h4>App de Chat Temps Réel - Projet scolaire</h4>
+        <p>Messagerie instantanée avec WebSocket, statuts online/offline, user typing, MongoDB &amp; PostgreSQL.</p>
+        <div class="pcard-tags"><span class="tag t-amber">WebSocket</span><span class="tag t-green">MongoDB</span><span class="tag t-teal">PostgreSQL</span><span class="tag t-em">Backend</span></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-num">02</div>
+        <div class="pcard-icon">☕</div>
+        <h4>Jeu 3D en Java - Projet scolaire</h4>
+        <p>Jeu 3D complet : modélisation d'environnements, logique de jeu, assets sons/animations et gameplay.</p>
+        <div class="pcard-tags"><span class="tag t-amber">Java</span><span class="tag t-green">3D</span><span class="tag t-em">Game Dev</span></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-num">03</div>
+        <div class="pcard-icon">💼</div>
+        <h4>Site d'Offres d'Emploi - Projet scolaire</h4>
+        <p>Plateforme full-stack : offres, comptes utilisateurs/admin, tableau de bord, SQLite3 &amp; phpMyAdmin.</p>
+        <div class="pcard-tags"><span class="tag t-teal">HTML/CSS/JS</span><span class="tag t-green">SQLite3</span><span class="tag t-amber">phpMyAdmin</span></div>
+      </div>
+      
+      <div class="pcard">
+        <div class="pcard-num">05</div>
+        <div class="pcard-icon">🐳</div>
+        <h4>Pipeline CI/CD Docker &amp; Jenkins - Projet scolaire</h4>
+        <p>Pipeline d'intégration et déploiement continu avec Docker et Jenkins sur Ubuntu WSL.</p>
+        <div class="pcard-tags"><span class="tag t-teal">Docker</span><span class="tag t-amber">Jenkins</span><span class="tag t-green">CI/CD</span><span class="tag t-em">DevOps</span></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-num">06</div>
+        <div class="pcard-icon">🐍</div>
+        <h4>Scripts Python &amp; Automatisation</h4>
+        <p>Scripts Python pour l'automatisation de tâches, traitement de données et interfaçage BDD.</p>
+        <div class="pcard-tags"><span class="tag t-green">Python</span><span class="tag t-teal">Automatisation</span><span class="tag t-em">Scripts</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="badge">Contact</span>
+      <h2 class="section-title">Restons en contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <p class="contact-title">Disponible pour une alternance</p>
+        <p class="contact-sub">N'hésitez pas à me contacter pour discuter d'une opportunité DevOps ou développement web Full Stack. Rythme : 4 jours entreprise / 1 jour cours.</p>
+        <a href="mailto:ladji.karamoko@epitech.eu" class="citem">
+          <div class="citem-icon">📧</div>
+          <div><div class="citem-label">Email</div><div class="citem-val">ladji.karamoko@epitech.eu</div></div>
+          <span class="citem-arrow">→</span>
+        </a>
+        <a href="tel:0695969022" class="citem">
+          <div class="citem-icon">📞</div>
+          <div><div class="citem-label">Téléphone</div><div class="citem-val">06 95 96 90 22</div></div>
+          <span class="citem-arrow">→</span>
+        </a>
+        <div class="citem">
+          <div class="citem-icon">📍</div>
+          <div><div class="citem-label">Localisation</div><div class="citem-val">93300 Aubervilliers . Île-de-France</div></div>
+          <span class="citem-arrow">→</span>
+        </div>
+        <a href="https://www.linkedin.com/in/ladjikaramokoa30532319" target="_blank" rel="noopener" class="citem">
+          <div class="citem-icon citem-linkedin">in</div>
+          <div><div class="citem-label">LinkedIn</div><div class="citem-val">Ladji KARAMOKO</div></div>
+          <span class="citem-arrow">→</span>
+        </a>
+        <div class="citem">
+          <div class="citem-icon">📄</div>
+          <div><div class="citem-label">CV</div><div class="citem-val">Télécharger mon CV</div></div>
+          <span class="citem-arrow">↓</span>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="fg"><label>Nom complet</label><input type="text" placeholder="Jean Dupont" required /></div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="jean@email.com" required /></div>
+        </div>
+        <div class="fg"><label>Sujet</label><input type="text" placeholder="Proposition d'alternance DevOps" /></div>
+        <div class="fg"><label>Message</label><textarea placeholder="Votre message..." rows="5" required></textarea></div>
+        <button type="submit" class="btn-submit">Envoyer le message ✉</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <strong>Ladji KARAMOKO</strong> · Développeur Web Full-Stack . DevOps Junior</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
