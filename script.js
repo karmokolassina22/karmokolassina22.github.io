@@ -135,6 +135,7 @@
    CONTACT FORM
    ============================================= */
 (function contactForm() {
+  
   var form = document.getElementById('contactForm');
   if (!form) return;
 
