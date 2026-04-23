@@ -134,8 +134,10 @@
 /* =============================================
    CONTACT FORM
    ============================================= */
+/* =============================================
+   CONTACT FORM
+   ============================================= */
 (function contactForm() {
-  
   var form = document.getElementById('contactForm');
   if (!form) return;
 
@@ -144,14 +146,15 @@
     var btn = form.querySelector('.btn-submit');
     var orig = btn.textContent;
     var data = new FormData(form);
+    data.append('access_key', '508d3493-20b9-4aa2-b926-1ba3b3157465');
 
-    fetch('https://formspree.io/f/xrerozep', {
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
+      body: data
     })
-    .then(function(res) {
-      if (res.ok) {
+    .then(function(res) { return res.json(); })
+    .then(function(json) {
+      if (json.success) {
         btn.textContent = '✓ Message envoyé !';
         btn.style.background = '#059669';
         btn.disabled = true;
@@ -180,7 +183,6 @@
     });
   });
 })();
-
 /* =============================================
    FADE-IN ON SCROLL (cards & sections)
    ============================================= */
