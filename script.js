@@ -146,7 +146,7 @@
     var btn = form.querySelector('.btn-submit');
     var orig = btn.textContent;
     var data = new FormData(form);
-    data.append('access_key', '508d3493-20b9-4aa2-b926-1ba3b3157465');
+   
 
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
